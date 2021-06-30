@@ -1,9 +1,15 @@
 import "./styles.css"; //Import peret m'accès à d'autres fichier
 import React from "react";
+import cabbage from "./assets/image1.jpeg";
+import mango from "./assets/image2.jpeg";
+import fig from "./assets/image3.jpeg";
+import gaze from "./assets/image4.jpeg";
+import peach from "./assets/image5.jpeg";
+import avocado from "./assets/image6.jpeg";
+
+const images = [cabbage, mango, fig, gaze, peach, avocado];
 
 const App = () => {
-  const greeting = "Yo momma so fat";
-
   return (
     <div className="App">
       <div>
@@ -15,7 +21,7 @@ const App = () => {
       </div>
 
       <div className="image-container">
-        <img alt="" src=""></img>
+        <img alt="" src={images[2]}></img>
       </div>
     </div>
   );
